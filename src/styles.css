@@ -1,0 +1,97 @@
+@font-face {
+  font-family: MerriWeather Light;
+  src: url("./assets/fonts/Merriweather-Light.ttf");
+}
+
+@font-face {
+  font-family: MerriWeather Bold;
+  src: url("./assets/fonts/Merriweather-Bold.ttf");
+}
+
+* {
+  font-family: "Merriweather Light";
+
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  padding: 0px 25px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a {
+  padding: 15px;
+  color: white;
+  font: bold;
+  text-decoration-line: none;
+}
+
+nav > a:hover {
+  background-color: gray;
+}
+
+span.clickable:hover {
+  cursor: pointer;
+}
+
+.poem {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.poems {
+  padding: 50px clamp(25px, 15%, 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  column-gap: 50px;
+  gap: 50px;
+}
+
+.single-poem {
+  padding: 50px clamp(25px, 15%, 100px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.single-poem > h1 {
+  font-size: 30px;
+}
+
+.share-poem {
+  padding: 50px clamp(25px, 15%, 100px);
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field > input {
+  height: 24px;
+  padding: 0px 5px;
+}
+
+.form-field > textarea {
+  padding: 5px;
+}
+
+button {
+  padding: 5px 0px;
+  font-weight: bold;
+  border: solid 2px blue;
+  border-radius: 10px;
+  color: white;
+  background-color: blue;
+}
